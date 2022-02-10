@@ -1,0 +1,515 @@
+:<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <!--estilos Javascript-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/> 
+        <!--Agregar estilos css-->
+        <link rel="stylesheet" href="Inicio.css">
+    </head>
+    <body>
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+        
+            <a href="#" class="logo"><span>Geo</span>Turismo.</a>
+        
+            <nav class="navbar">
+                <a href="#home">Inicio</a>
+                <a href="#book">Geoportal</a>
+                <a href="#packages">Servicios</a>
+                <a href="#services">Mapa general</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#review">Investigaciones</a>
+                <a href="#contact">Contactanos</a>
+            </nav>
+        
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+        
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        
+        </header>
+
+        <div class="login-form-container">
+
+            <i class="fas fa-times" id="form-close"></i>
+        
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="Ingresa tu Email">
+                <input type="password" class="box" placeholder="Ingresa tu contraseña">
+                <input type="submit" value="login now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Recordar.</label>
+                <p>Olividastes la contraseña? <a href="#">Click aqui</a></p>
+                <p>No tienes una cuenta? <a href="#">registrate aqui.</a></p>
+            </form>
+        
+        </div>
+
+<div class="conteiner-welcome">
+    <div class="contenedor-img">
+            <img src="LOGO.png" alt="Geoturismo">
+    </div>
+    <div class="contenedor-texto">
+    <h2 class="titulo">
+    <span class="typed"></span> 
+    </h2> 
+     <div class="titulo" id="cadenas-texto">
+    <p>Bienvenido a <i class="mascota">Geoturismo</i></p>
+    <p><i class="mascota">Mapeo turistico.</i></p> 
+    </div>  
+    <p class="parrafo">Este es un proyecto web enfocado al desarrollo del turismo de Honduras, mapeo web y generación de información para la toma de decisiones  puedes visualizar el geo portal web  para datos abiertos.</p>
+    <a href="#" class="btn-link activo">Visitanos</a>
+    <a href="#" class="btn-link">Geportal web.</a>
+    </div>
+</div>
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Geoturismo Mapeo turistico Honduras</h3>
+        <p>Descubre Honduras a traves de los mapas.</p>
+        <a href="#" class="btn">Descubre mas.</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="Video1.mp4"></span>
+        <span class="vid-btn" data-src="Video2.mp4"></span>
+        <span class="vid-btn" data-src="Video3.mp4"></span>
+        <span class="vid-btn" data-src="Video4.mp4"></span>
+        <span class="vid-btn" data-src="Video5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="Video1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>o</span>
+        <span>c</span>
+        <span>e</span>
+        <span>H</span>
+        <span>o</span>
+        <span>n</span>
+        <span>d</span>
+        <span>u</span>
+        <span>r</span>
+        <span>a</span>
+        <span>s</span>
+    </h1>
+
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Roatan.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Roatán </h3>
+                <p>Roatán ubicado en el Dept. de Islas de la Bahia.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Mapa turistico<span></span> </div>
+                <a href="#" class="btn">Mira mas</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="CopanRuinas.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Copan Ruinas.</h3>
+                <p>Copan Ruinas ubicado en el Dept. de Copan. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Mapa turistico<span></span> </div>
+                <a href="#" class="btn">Mira mas.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Trujillo.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Trujillo</h3>
+                <p>Trujillo ubicado en el Dept. de Colón. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Mapa turistico<span></span></div>
+                <a href="#" class="btn">Mira mas.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Lago_Yojoa.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Lago de Yojoa.</h3>
+                <p>Lago de Yojoa ubicado en los Depts. Comayagua, Cortés y Santa Bárbara</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Mapa turistico <span></span> </div>
+                <a href="#" class="btn">Mira mas. </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Talanga.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Talanga</h3>
+                <p>Ubicado en el Dept. Francisco Morazán</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Mapa turistico<span></span> </div>
+                <a href="Talanga.html" class="btn">Mira mas.</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="caves-3859011.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Cuevas de Taulabé</h3>
+                <p>Cuevas de Taulabé estan ubicado en el Dept. Francisco Morazán</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Mapa turistico<span></span> </div>
+                <a href="#" class="btn">Mira mas.</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>i</span>
+        <span>o</span>
+        <span>s</span> 
+
+        <span>G</span>
+        <span>e</span>
+        <span>o</span>
+        <span>T</span>
+        <span>u</span>
+        <span>r</span>
+        <span>i</span>
+        <span>s</span>
+        <span>m</span>
+        <span>o</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Mapas Turisticos,</h3>
+            <p>Mapa de las zonas turisticas de Honduras, localizacion e informacion de los elementos que influyen cada zona de interes.</p>
+        </div>
+        <div class="box">
+            <i class="fi fi-rr-cloud-download"></i>
+            <h3>Geoportal webmapping.</h3>
+            <p>Geportal web que nos permite visualizar y almacenar los datos espaciales del turismo de Honduras.</p>
+        </div>
+        <div class="box">
+            <i class="fifi fi-rr-database""></i>
+            <h3>Base de datos Turismo Honduras.</h3>
+            <p>Generacion de datos fundamentales de turismo, informacion socioeconomica y rutas turisticas almacenados en una base de datos postgis en nuestro geoportal Turismo.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Informacion de nuestras ubicaciones turisticas.</h3>
+            <p>Informacion de interes sobre las zonas turisticas, Hoteles, restaurantes y centros de interes para informacion al publico.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>SIG para el turismo</h3>
+            <p>Informacion SIG para el turismo, como datos socioeconomicos y fisicos que serviran para generar mejores planes del desarrollo del turismo en Honduras.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Rutas turisticas</h3>
+            <p>Mapeo de rutas turisticas nos permitira conocer tramos que podemos tomar al momento de visitar un lugar, zonas de interes.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>G</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>i</span>
+        <span>a</span> 
+        <span>.</span>
+        <span>T</span>
+        <span>u</span>
+        <span>r</span>
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>
+        <span>i</span>
+        <span>c</span> 
+        <span>a</span>   
+ 
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="GEO1.PNG" alt="">
+            <div class="content">
+                <h3>Conoce Honduras.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO2.PNG" alt="">
+            <div class="content">
+                <h3>Conoce Honduras.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO3.PNG" alt="">
+            <div class="content">
+                <h3>Conoce Honduras.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO4.PNG" alt="">
+            <div class="content">
+                <h3>Conoce Honduras.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO5.PNG" alt="">
+            <div class="content">
+                <h3>Conoce Honduras.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO6.PNG" alt="">
+            <div class="content">
+                <h3>Conoce Honduras.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO7.PNG" alt="">
+            <div class="content">
+                <h3>Conoce Honduras.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO8.PNG" alt="">
+            <div class="content">
+                <h3>Conoce Honduras.</h3>
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="GEO9.PNG" alt=""> 
+            <div class="content">
+                <h3>Conoce Honduras.</h3> 
+                <p>Mira informacion y el mapa de tu zona de interes.</p>
+                <a href="#" class="btn">mira mas aqui.</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="home" id="home">
+    <h1 class="heading">
+        <span>M</span>
+        <span>a</span>
+        <span>p</span>
+        <span>a</span>
+        <span>s</span>
+        <span>W</span>
+        <span>e</span>
+        <span>b</span> 
+           
+    </h1>
+    <div class="slide-container active">
+        <div class="slide">
+            <div class="content">
+                <span>Mira el mapa web conoce Honduras.</span>
+                <h3>Talanga, Francisco Morazán</h3>
+                <p>
+                    Información sobre nuestro sitio turístico, Galería de fotos mapa web de turismo. 
+                </p>
+                <a href="Talanga.html" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="Talanga2.jpg" alt="" class="text"> 
+            </div>
+        </div>
+    </div> 
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <span>Mira el mapa web conoce Honduras.</span>
+                <h3>La Tigra, Francisco Morazán</h3>
+                <p>
+                    Información sobre nuestro sitio turístico, Galería de fotos mapa web de turismo.
+                </p>
+                <a href="#" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="LaTigra.jpg" alt="" class="text">
+            </div>
+        </div>
+    </div> 
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <span>Mira el mapa web conoce Honduras.</span> 
+                <h3>Santa Lucia,Francisco Morazán</h3>
+                <p>
+                    Información sobre nuestro sitio turístico, Galería de fotos mapa web de turismo.
+                </p>
+                <a href="#" class="btn">Mira Aqui</a>
+            </div>
+            <div class="images">
+                <img src="Santalucia.jpg" alt="" class="text">
+            </div>
+        </div>
+    </div>
+    <div id="prev" class="fas fa-chevron-left" ></div>
+    <div id="next" class="fas fa-chevron-right"></div>
+</section> 
+
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="Arcgis.png" alt=""></div>
+            <div class="swiper-slide"><img src="QGIS.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="Geonode.png" alt=""></div>
+            <div class="swiper-slide"><img src="ReactJS.png" alt=""></div>
+            <div class="swiper-slide"><img src="Django.png" alt=""></div>
+            <div class="swiper-slide"><img src="Leaflet.png" alt=""></div>
+            <div class="swiper-slide"><img src="OpenLsyers.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="JS.jpg" alt=""></div> 
+            <div class="swiper-slide"><img src="Postgres.jpg" alt=""></div> 
+
+        </div>  
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Sobre Nosotros</h3>
+            <p>Aplicacion de los SIG al desarrollo sostenible de Honduras.</p>
+        </div>
+        <div class="box">
+            <h3>Enlaces</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Geoportal</a>
+            <a href="#">Servicios</a>
+            <a href="#">Mapa general</a>
+            <a href="#">Investigaciones</a>
+            <a href="#">Contactanos</a>
+        </div>
+        <div class="box">
+            <h3>Siguenos en: </h3>
+            <a href="#" class="fa-brands fa-facebook-f">Facebok</a>
+            <a href="#" class="fa-brands fa-instagram">Instagram</a>
+            <a href="#"class="fa-brands fa-twitter">Twitter</a>
+            <a href="#" class="fa-brands fa-github">Github</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> Creado por <span> Carlos Archaga Analista SIG. </span> | Derechos reservador </h1>
+
+</section>
+         
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+        <script src="https://unpkg.com/scrollreveal"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script src="scripts1.js"></script>
+    
+    </body>
+</html>
