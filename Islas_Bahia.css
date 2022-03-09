@@ -241,6 +241,76 @@ html{
     cursor: pointer;
     display: none;
   } 
+  
+  .conteiner-welcome {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px;
+   color:black;
+   background: rgba(128, 125, 125, 0.4);}
+
+.conteiner-welcome .contenedor-img {
+    max-width: 70%;
+    margin-right: 40px;
+}
+.conteiner-welcome .contenedor-img img{
+ width: 100%;
+ height:400px;
+}  
+
+.contenedor-texto .titulo {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.contenedor-texto .mascota {
+    font-weight: bold;
+    color:aqua;
+    font-style: normal;
+}
+
+.contenedor-texto p {
+    margin-bottom: 40px;
+    line-height: 36px;
+}
+.contenedor-texto .parrafo{
+    font-size:18px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 10px;
+   border-radius: 100px;
+    margin-right: 10px;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 1.9rem;
+}
+
+.btn-link:hover,
+.btn-link.activo {
+   color: #fff;
+   background: #5b4a9a;
+}
+
+
+.informacion article h2{
+    font-size:35px;
+    text-align: center; 
+}
+
+.informacion article p{
+    font-size:18px;
+    text-align: justify;
+} 
+
+
+
+
  
   @media (max-width:1200px){
 
