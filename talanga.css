@@ -360,6 +360,20 @@ html{
   text-align: justify;
 } 
 
+.legend { 
+  line-height: 18px; 
+  border:1px solid black;
+  background:rgba(0,0,0,0.4);
+  color:white;
+  }  
+.legend I { 
+  width: 18px;
+  height: 18px; 
+  float: left; 
+  margin-right: 8px; 
+  opacity: 0.7; 
+  } 
+
 .home{
   background-color: #333; 
   padding:0;
