@@ -89,7 +89,7 @@ let info1 = L.control();
                     d == "Pajarillos" ? '#404040' :
                                '#404040';}
 
-                function style(feature){
+        function style(feature){
                                 return {
                                     fillColor: getColor(feature.properties.NOMBRE),
                                     weight: 2,
@@ -143,9 +143,8 @@ let info1 = L.control();
 //agregar capas al mapa en un control de capas
 L.control.layers(mapasbase,capas,{position: "topleft"}).addTo(mapa); 
 
-    
-   /*
-    const legend = L.control({position: 'bottomleft'}); 
+
+    const legend = L.control({position: 'bottomright'}); 
      legend.onAdd = function (mapa) { 
         var div = L.DomUtil.create('div', 'info legend'), 
         grades = ["El Tomate","Agalteca","El Guanacaste","El Tablan","R8o Abajo","El Rosario o Laja Picada","La Ermita",
@@ -161,4 +160,4 @@ L.control.layers(mapasbase,capas,{position: "topleft"}).addTo(mapa);
         return div; 
         }; 
         
-        legend.addTo(mapa); */
+        legend.addTo(mapa); 

@@ -1,6 +1,6 @@
 var mapoptions1 = {center:[14.40, -87.083],zoom: 15,zoomControl: true};
 var setMaxBounds1 = [14.0758, -87.1826, 14.1075, -87.1418];
-var mapa = L.map('map2',mapoptions1,L.CRS.EPSG4326,setMaxBounds1); 
+var mapa = L.map('map2',mapoptions1,setMaxBounds1);   
 //agregar mapa base de mapbox
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -33,6 +33,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
             tileSize: 512,
             zoomOffset: -1,
             accessToken: 'pk.eyJ1Ijoib3NpdG9kb2JiaWUiLCJhIjoiY2t2NXlycG5xM3R2ZDJ3cDY2azA3dmxlciJ9.8Q9I-QOLNZ0mZL5pt_JnfQ'}); 
+
+    let OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+                maxZoom: 17,
+                attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+            });
 
     //funcion para Hoteles;
     function popup2(feature,layer){
@@ -649,7 +654,8 @@ L.marker([14.397,-87.081],{icon: Restaurantes}).addTo(mapa).bindPopup(text52());
 let mapasbase2 = {
     'Mapa base Aatelite': satelite1,
     'Mapa de Noche':noche,
-     'Mapa de Calles':calles};
+    'Mapa de Calles':calles,
+    'Mapa topografico':OpenTopoMap};
 
 
     function style(feature){
@@ -670,6 +676,25 @@ let mapasbase2 = {
 
 //agregar capas al mapa en un control de capas
 L.control.layers(mapasbase2,capasbase,{position: "topleft"}).addTo(mapa);  
+
+L.control.scale().addTo(mapa);
+/*
+var options_measure = {
+    position: 'topright',
+    primaryLengthUnit: 'meters', 
+    secondaryLengthUnit: 'feet' ,
+    primaryAreaUnit: 'sqmeters',
+    activeColor: '#F4FB15',
+    completedColor: '#F4FB15'
+};*/
+L.Control.Measure({
+    primaryLengthUnit: 'meters', 
+    secondaryLengthUnit: 'feet' ,
+    primaryAreaUnit: 'sqmeters',
+    activeColor: '#F4FB15',
+    completedColor: '#F4FB15'
+}).addTo(mapa);
+
 
 
 
