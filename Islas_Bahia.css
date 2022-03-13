@@ -308,6 +308,30 @@ html{
     text-align: justify;
 } 
 
+.localizacion{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  height: 80px;
+}
+
+.localizacion .localizacion-resumen{
+  grid-column: 2/5; 
+}
+
+.localizacion .icono{
+  grid-column: 2/4;
+}
+
+.localizacion .icono ion-icon{
+  font-size: 40px;
+  border: #222 solid 1px;
+}
+
+.localizacion .icono ion-icon:hover{
+  opacity: 0.5;
+}
+
+
 .Mapafinal{
   display: grid;
   grid-template-columns: repeat(12,1fr);
@@ -514,6 +538,31 @@ html{
   
     .review{
       display:none;}
+
+      .localizacion{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        height: 80px;
+        margin-bottom: 10px;
+      }
+
+      .localizacion .localizacion-resumen{
+        grid-column: 1/-1; 
+      }
+
+      .localizacion-resumen h1{
+        text-align: center;
+      }
+      
+      .localizacion .icono{
+        grid-column: 1/-1;
+       
+      }
+
+     #Icono_map{
+        margin-left: calc(50% - 15px);
+
+      }
 
       .Mapafinal .Mapafinaldata{
         display: none;

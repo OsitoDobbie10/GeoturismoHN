@@ -404,6 +404,46 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
         formulario7.addEventListener('submit', evento7);  
       
 
+        let location1 = document.getElementById('Icono_map');
+        location1.addEventListener('click',localizacion_mapa);
+
+        function localizacion_mapa(){
+            let x = document.getElementById('parrafo');
+            if (navigator.geolocation) {
+                navigator.geolocation.watchPosition(showPosition);
+              } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            } 
+
+        function showPosition(position){
+            let coordY = position.coords.latitude;
+            let coordX = position.coords.longitude;
+            var icono_mio = L.icon({ 
+                iconUrl: 'localizacion.png',
+                //shadowUrl: 'leaf-shadow.png',
+                iconSize:     [30, 30], // size of the icon
+                shadowSize:   [50, 64], // size of the shadow
+                iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+                shadowAnchor: [4, 62],  // the same for the shadow
+                popupAnchor:  [-5, -86] // point from which the popup should open relative to the iconAnchor
+            });
+            
+            function text(){
+                return `<Strong>Mi ubicacion: </Strong>Cargada en mi diapositivo <br>`}
+            
+            L.marker([coordY,coordX],{icon: icono_mio}).addTo(mapa).bindPopup(text());
+
+            let coordenadas = [coordY,coordX];
+            mapa.flyTo(coordenadas,18);
+
+        }
+
+
+
+
+        
+
     
 
         
